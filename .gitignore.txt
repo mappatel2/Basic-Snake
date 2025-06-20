@@ -1,0 +1,122 @@
+# C++ specific ignores
+
+# Compiled Object files, Libraries, and Executables
+*.o       # Object files
+*.obj     # Object files (Windows)
+*.ko      # Kernel modules
+*.lo      # Libtool object files
+*.la      # Libtool archives
+*.so      # Shared libraries
+*.dylib   # Dynamic libraries (macOS)
+*.dll     # Dynamic Link Libraries (Windows)
+*.exe     # Executables (Windows)
+*.out     # Generic executable output (e.g., a.out)
+*.app     # macOS application bundles
+*.i       # Preprocessed source files
+*.s       # Assembly files
+
+# Build directories and intermediate files
+build/
+bin/
+obj/
+temp/
+tmp/
+debug/
+release/
+x64/
+x86/
+target/ # For CMake/Meson or similar build systems
+*.lib     # Static libraries (Windows)
+*.exp     # Export files (Windows)
+*.ilk     # Incremental linker files (Windows)
+*.pdb     # Program database files (Windows)
+*.idb     # Intermediate Debugging Information (Windows)
+*.res     # Resource files (Windows)
+*.rc      # Resource script files (Windows)
+
+# CMake related files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_CPack_Packages/
+
+# Visual Studio / MSVC specific ignores
+.vs/                   # VS 2017+ hidden Solution private files
+*.VC.db                # Visual Studio IntelliSense database (older)
+*.VC.VC.opendb         # Visual Studio IntelliSense database (newer)
+*.vcxproj.user         # Per-user project settings
+*.vcxproj.filters      # Filter definitions (usually committed, but sometimes ignored)
+*.sln.docstates        # Solution user-specific states
+*.suo                  # Solution user options (older VS)
+*.user                 # User-specific project files (older VS)
+*.sdf                  # SQL CE Database file for IntelliSense (older VS)
+ipch/                  # Precompiled header directory (older VS)
+*.aps                  # Visual Studio resource script cache
+*.opendb
+Debug/
+Release/
+ipch/
+out/
+
+# Eclipse IDE specific ignores
+.project
+.classpath
+.settings/
+.apt_generated/
+.factorypath
+.metadata
+
+# Xcode specific ignores (macOS/iOS development)
+build/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+*.xcactivitylog
+*.xcscheme
+*.ipa
+*.dSYM
+
+# Qt Creator specific ignores
+*.pro.user
+*.pro.user.*
+*.qmlproject.user
+*.qtcreator/
+*.autosave
+
+# CLion specific ignores (JetBrains IDE)
+.idea/
+cmake-build-*/ # CLion's default build directories
+
+# SCons
+.sconsign.dblite
+.sconsign/
+
+# Conan package manager
+conanfile.pyc
+conanbuildinfo.cmake
+conaninfo.txt
+conan_install/
+build-*.cmake
+graph_info.json
+
+# Vcpkg package manager
+vcpkg_installed/
+
+# General text editor ignores
+*~            # Backup files (often Vim)
+*.bak         # Backup files
+*.swp         # Swap files (Vim)
+*.swo         # Swap files (Vim)
+*.swn         # Swap files (Vim)
+.DS_Store     # macOS specific files
+Thumbs.db     # Windows specific files
+ehthumbs.db   # Windows specific files
+desktop.ini   # Windows specific files
+
+# Logs and other generated files
+*.log
+*.err
+*.stackdump
